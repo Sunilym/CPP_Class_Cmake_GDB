@@ -9,3 +9,14 @@ This is the "planning" phase — nothing gets compiled yet.
 Runs the actual compilation and linking. . means "use the build files in the current directory."
 Under the hood, this calls the native build tool (MSBuild for MSVC) to compile your .cpp files into .obj files and link them into main.exe.
 This is the "building" phase — your code actually gets compiled.
+
+
+cd C:\Learning\GTest\CPP_Class_Cmake_GDB\build
+cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Debug
+cmake --build .
+
+
+cmake --build . --config Debug
+
+
+(gdb) file main.exe
