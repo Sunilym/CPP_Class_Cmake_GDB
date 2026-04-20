@@ -12,6 +12,7 @@ class Circle : public Shape {
 
     double area() ;
     double perimeter() ;
+    ~Circle();
 
 
 };

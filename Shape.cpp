@@ -15,3 +15,8 @@ double Shape :: perimeter()
     cout<<"Perimeter of shape"<<endl;
     return 0;
 }
+
+Shape::~Shape()
+{
+    cout<<"Shape destructor called"<<endl;
+}

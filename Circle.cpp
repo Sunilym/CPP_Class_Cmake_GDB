@@ -1,3 +1,5 @@
+#include<iostream>
+using namespace std;
 #include "Circle.hpp"
 #include <cmath>
 
@@ -15,4 +17,9 @@ double Circle ::area()
 double Circle :: perimeter()
 {
     return 2 * 3.14 * r;
+}
+
+Circle :: ~Circle()
+{
+    cout<<"Circle destructor called"<<endl;
 }
