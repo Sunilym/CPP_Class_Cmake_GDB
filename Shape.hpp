@@ -8,7 +8,7 @@ class Shape{
 public:
     virtual double area();
     virtual double perimeter();
-    ~Shape();
+    virtual~Shape();
 };
 
 #endif
